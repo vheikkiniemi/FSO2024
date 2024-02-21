@@ -42,13 +42,15 @@ strict-origin-when-cross-origin
     deactivate server
 
     Note right of browser: The browser executes the callback function that renders the notes
-
+    
+    Browser: POST https://studies.cs.helsinki.fi/exampleapp/new_note --> Server: Redirection to /exampleapp/notes ???;
+    Server: Redirection to /exampleapp/notes ??? --> Browser: GET https://studies.cs.helsinki.fi/exampleapp/notes;
 
 
 Here is a simple flow chart:
 
 ```mermaid
 graph TD;
-    Browser: POST https://studies.cs.helsinki.fi/exampleapp/new_note --> Server: Redirection to /exampleapp/notes ???;
-    Server: Redirection to /exampleapp/notes ??? --> Browser: GET https://studies.cs.helsinki.fi/exampleapp/notes;
+    1. Browser: --> 2. Server:;
+    2. Server: --> 3. Browser:;
 ```
