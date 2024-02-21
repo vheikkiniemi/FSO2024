@@ -51,6 +51,6 @@ Here is a simple flow chart:
 
 ```mermaid
 graph TD;
-    Server:AA --> Browser:;
+    Server: AA --> Browser:;
     Browser: --> C;
 ```
