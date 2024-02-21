@@ -51,6 +51,6 @@ Here is a simple flow chart:
 
 ```mermaid
 graph TD;
-    Server:&nbsp;POST&nbsp;https://studies.cs.helsinki.fi/exampleapp/new_note --> Browser:;
+    Server:&nbspPOST&nbsphttps://studies.cs.helsinki.fi/exampleapp/new_note --> Browser:;
     Browser: --> C;
 ```
