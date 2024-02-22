@@ -1,1 +1,1 @@
-# FSO2024
+# Full Stack open 2024
