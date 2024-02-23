@@ -3,5 +3,6 @@
 > #### Status
 >
 > - 22.2.2024 -> Part 1 b -> Page re-rendering
-> -
+> - 23.2.2024 -> Part 1 d -> Conditional rendering
+> - 
 >
