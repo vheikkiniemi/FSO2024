@@ -13,7 +13,6 @@ const Part = (props) => {
 }
 
 const Content = (props) => {
-  // console.log(props)
   return (
     <div>
       <Part part={props.parts.parts[0].name} exercises={props.parts.parts[0].exercises}/>
@@ -24,7 +23,6 @@ const Content = (props) => {
 }
 
 const Total = (props) => {
-  // console.log(props.parts.parts[0].exercises)
   return (
     <p>Number of exercises {props.parts.parts[0].exercises + props.parts.parts[1].exercises + props.parts.parts[2].exercises}</p>
   )
