@@ -35,15 +35,40 @@ const App = () => {
       copy[selected] = 1
     }    
     Object.assign(points, copy)
-    console.log(points)
+    //console.log(points)
   }
 
-  // setSelected = 1
+  const GetVotes = () => {
+    if (points.hasOwnProperty(selected)) {
+      return points[selected]
+    } else {
+      return 0
+    }    
+  }
+
+  const MostVotes = () => {
+    let most = -1, last = -1
+    for (const key in points) {
+      if (points[key] > last) {
+        most = key
+      }
+      last = points[key]
+    } 
+    if (most != -1) {
+      return most
+    }
+  }
+
   return (
     <div>
+      <h1>Anecdote of the day</h1>
       {anecdotes[selected]} <br />
+      has {GetVotes()} votes<br />
       <Button handleClick={VoteAnecdote} text="vote" />
       <Button handleClick={SelectAnecdote} text="next anecdote" />
+      <h1>Anecdote with most votes</h1>
+      {anecdotes[MostVotes()]}<br />
+      has {points[MostVotes()]} votes<br />
     </div>
   )
 }

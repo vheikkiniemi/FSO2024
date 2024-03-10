@@ -8,4 +8,5 @@
 > - 2.3.2024 -> Part 1 d -> Exercise 1.11
 > - 3.3.2024 -> Part 1 d -> Exercise 1.12
 > - 8.3.2024 -> Part 1 d -> Exercise 1.13
+> - 10.3.2024 -> Part 1 d -> Exercise 1.14
 >
